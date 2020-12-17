@@ -3,7 +3,7 @@
 //
 // To make edits to the snippets in this file, please edit the source
 
-// [START functions_call_add_message_error_modular]
+// [START firebase_call_add_message_error_modular]
 import { getFunctions, httpsCallable } from "firebase/functions";
 
 const functions = getFunctions(firebaseApp);
@@ -20,4 +20,4 @@ addMessage({ text: messageText })
     const details = error.details;
     // ...
   });
-// [END functions_call_add_message_error_modular]
+// [END firebase_call_add_message_error_modular]

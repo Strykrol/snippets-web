@@ -10,17 +10,17 @@ initializeApp({
 });
 
 export function emulatorSettings() {
-  // [START functions_emulator_connect]
+  // [START firebase_emulator_connect]
   const { getApp } = require("firebase/app");
   const { getFunctions, useFunctionsEmulator } = require("firebase/functions");
 
   const functions = getFunctions(getApp());
   useFunctionsEmulator(functions, "localhost", 5001);
-  // [END functions_emulator_connect]
+  // [END firebase_emulator_connect]
 }
 
 export async function callFunction() {
-  // [START functions_callable_call]
+  // [START firebase_callable_call]
   const { getApp } = require("firebase/app");
   const { getFunctions, httpsCallable } = require("firebase/functions");
 
@@ -30,5 +30,5 @@ export async function callFunction() {
   const result = await addMessage({ text: '<message text>'});
   const sanitizedMessage = result.data.text;
   // ...
-  // [END functions_callable_call]
+  // [END firebase_callable_call]
 }

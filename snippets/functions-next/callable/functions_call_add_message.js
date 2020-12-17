@@ -3,7 +3,7 @@
 //
 // To make edits to the snippets in this file, please edit the source
 
-// [START functions_call_add_message_modular]
+// [START firebase_call_add_message_modular]
 import { getFunctions, httpsCallable } from "firebase/functions";
 
 const functions = getFunctions(firebaseApp);
@@ -13,4 +13,4 @@ addMessage({ text: messageText })
     // Read result of the Cloud Function.
     const sanitizedMessage = result.data.text;
   });
-// [END functions_call_add_message_modular]
+// [END firebase_call_add_message_modular]

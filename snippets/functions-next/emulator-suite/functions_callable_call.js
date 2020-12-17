@@ -3,7 +3,7 @@
 //
 // To make edits to the snippets in this file, please edit the source
 
-// [START functions_callable_call_modular]
+// [START firebase_callable_call_modular]
 import { getApp } from "firebase/app";
 import { getFunctions, httpsCallable } from "firebase/functions";
 
@@ -13,4 +13,4 @@ const addMessage = httpsCallable(functions, 'addMessage');
 const result = await addMessage({ text: '<message text>'});
 const sanitizedMessage = result.data.text;
 // ...
-// [END functions_callable_call_modular]
+// [END firebase_callable_call_modular]
